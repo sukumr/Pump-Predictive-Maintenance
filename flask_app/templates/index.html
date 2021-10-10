@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body%}
+<div id="title">
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <p id="pageInfo"> Application to predict pump status after 10min using sensor data</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <img id="picture" src="static/pump3.png" class="rounded mx-auto d-block" alt="pump">
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="container">
+    <div class="col text-center">
+      <form action='/load_data' method='GET'>
+        <input type="submit" value="Load Data" class="btn btn-primary" style="font-size: 18px; margin-top:20px" />
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
